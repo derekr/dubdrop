@@ -18,7 +18,7 @@ var $input = dubdrop('#file-input', {
             reader.onload = function (e) {
                 console.log(file.name, ' loaded');
                 console.log(e.target.result);
-                
+
                 callback(null, file);
             };
 
@@ -30,4 +30,12 @@ var $input = dubdrop('#file-input', {
         }
     ]
 });
+```
+
+## Contributing
+
+Running example:
+
+```
+npm start
 ```
