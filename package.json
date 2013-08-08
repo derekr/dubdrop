@@ -1,0 +1,25 @@
+{
+  "author": "drk <drk@diy.org> (drk.es)",
+  "name": "dubdrop",
+  "description": "Simple drag and drop file handler.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/drk/dubdrop",
+  "repository": {
+    "url": "https://github.com/drk/dubdrop"
+  },
+  "main": "./lib/index.js",
+  "scripts": {
+    "start": "beefy ../lib/index.js:dubdrop.js --cwd ./example --open -- -r ./lib/index.js:dubdrop",
+    "test": "tap ./test/*.js"
+  },
+  "devDependencies": {
+    "beefy": "~0.4.1",
+    "browserify": "~2.26.0",
+    "tap": "~0.3.1"
+  },
+  "browser": "",
+  "dependencies": {
+    "queue-async": "~1.0.4",
+    "lodash": "~1.3.1"
+  }
+}

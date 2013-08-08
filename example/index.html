@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>dubdrop Example</title>
+    </head>
+    <body>
+
+        <div id="example-input">
+            <input type="file" id="file-input" multiple />
+        </div>
+        
+        <script src="dubdrop.js"></script>
+
+        <script type="text/javascript">
+            var dubdrop = require('dubdrop');
+
+            var exampleInput = dubdrop('#file-input', {
+                'tasks': [
+                    function readFile (file, callback) {
+                        var reader = new FileReader();
+
+                        reader.onload = function (e) {
+                            console.log(file.name, ' loaded');
+                            console.log(e.target.result);
+
+                            callback(null, file);
+                        };
+
+                        reader.readAsText(file);
+                    }
+                ]
+            });
+        </script>
+    </body>
+</html>
