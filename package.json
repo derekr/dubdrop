@@ -2,7 +2,7 @@
   "author": "drk <drk@diy.org> (drk.es)",
   "name": "dubdrop",
   "description": "Simple drag and drop file handler.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/derekr/dubdrop",
   "repository": {
     "url": "https://github.com/derekr/dubdrop"
