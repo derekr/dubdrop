@@ -19,14 +19,12 @@
 
             var exampleInput = dubdrop('#file-input', {
                 'tasks': [
-                    function readFile (file, callback) {
+                    function readFile (file) {
                         var reader = new FileReader();
 
                         reader.onload = function (e) {
                             console.log(file.name, ' loaded');
                             console.log(e.target.result);
-
-                            callback(null, file);
                         };
 
                         reader.readAsText(file);
