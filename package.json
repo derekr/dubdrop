@@ -3,10 +3,19 @@
   "name": "dubdrop",
   "description": "Simple drag and drop file handler.",
   "version": "0.0.1",
-  "homepage": "https://github.com/drk/dubdrop",
+  "homepage": "https://github.com/derekr/dubdrop",
   "repository": {
-    "url": "https://github.com/drk/dubdrop"
+    "url": "https://github.com/derekr/dubdrop"
   },
+  "keywords": [
+    "browser",
+    "file upload",
+    "files",
+    "drag and drop",
+    "drag",
+    "drop",
+    "file"
+  ],
   "main": "./lib/index.js",
   "scripts": {
     "start": "beefy ../lib/index.js:dubdrop.js --cwd ./example --open -- -r ./lib/index.js:dubdrop",
